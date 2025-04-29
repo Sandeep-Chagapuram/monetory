@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="flex items-center flex-col mt-28">
+    <div class="bg-[url('/images/body_bg.png')] bg-center fixed top-0 left-0 w-full h-full opacity-30"></div>
+    <div class="bg-white/95 backdrop-blur-3xl h-7 std_width fixed top-0 z-50"></div>
+    <nav
+        class=" bg-white/60 backdrop-blur-2xl fixed top-6 z-50 rounded-xl custom_shadow w-[95%] max-w-[2000px]  h-20  pr-4 pl-4 flex justify-between items-center ml-1 mr-1">
+        <h1 class="text-2xl font-semibold">MONETORY</h1>
+        <ul class="flex w-72 justify-between items-center hidden sm:flex ">
+            <li><a class="link" href="#">Home</a></li>
+            <li><a class="link" href="#features">Features</a></li>
+            <li><a class="link" href="#aboutus">About us</a></li>
+        </ul>
+        <div class="mr-3 h-[75%]  aspect-square rounded-full custom_shadow flex items-center justify-center sm:hidden hover:cursor-pointer  active:bg-slate-400 ">
+            <i id="menu" class="text-xl fa-solid fa-bars"></i>
+            
+        </div>
+        <div id="menubar" class="absolute top-20 right-1 h-[62vh] w-[75vw] custom_shadow rounded-b-3xl  z-20 bg-white hidden animate-menu pt-8 pl-5">
+            <ul class="flex flex-col items-start justify-start pt-11 pl-12 gap-11">
+                <li><a class="mlink " href="#">Home</a></li>
+                <li><a class="mlink" href="#features">Features</a></li>
+                <li><a class="mlink" href="#aboutus">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="main"
+        class=" z-10 border-none std_box std_width relative bg-gradient-to-tl from-[rgba(118,229,207,0.3)] via-[rgba(221,103,209,0.3)] to-[rgba(85,176,215,0.3)] flex flex-col items-center text-center  lg:flex-row lg:justify-between lg:pt-10 pt-6 pr-6 pl-6 pb-10 ">
+
+        <div
+            class="lg:min-h-[96%] items-center w-[96%] sm:w-[65%] lg:items-start lg:text-left flex flex-col lg:gap-9 gap-11  ">
+            <div class="flex flex-col pt-8 gap-7 lg:min-h-[450px]">
+                <h1 class=" text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none  font-bold ">Transform the Way You
+                    Manage
+                    Money with Finary</h1>
+                <p class="text-2xl md:text-xl lg:text-2xl xl:text-3xl text-[rgba(0,0,0,0.56)]">
+                    Manage your spending, set budgets, and reach savings goals—all in one place. Simple, powerful, and
+                    effective.
+                </p>
+            </div>
+            <div class="buttons h-14 text-2xl  flex justify-around items-center gap-2 w-full max-w-[420px]">
+                <div
+                    class="button_shadow  w-[50%] h-12 bg-blue-600 text-white rounded-full flex justify-center items-center">
+                    Log in</div>
+                <div class="button_shadow w-[50%] h-12 bg-gray-300 rounded-full flex justify-center items-center">Sign
+                    up</div>
+            </div>
+        </div>
+
+        <div
+            class=" relative  rounded-3xl  w-[96%] max-w-[520px] h-[370px] sm:h-[500px] lg:w-[35%] m-5 bg-[url('/images/main.jpg')] bg-cover bg-no-repeat bg-top">
+            <!-- <img src="./main.jpg" alt="Image" class="w-full h-full"> -->
+        </div>
+
+    </section>
+
+    <section id="features" class="bg-[rgba(255,255,255,0.5)] z-10 scroll-mt-[120px] relative std_box std_width p-9 pt-11">
+        <h1 class="text-4xl font-medium">Features</h1>
+        <div class="w-full flex justify-center items-center flex-wrap pt-7 relative ">
+            <div class="features_box flex">
+                <div class="feature_img ">
+                    <img src="/images/coin.jpeg" alt="" class="h-full w-full rounded-l-2xl">
+                </div>
+
+                <div class="feature_text bg-gradient-to-r from-[rgba(251,247,246,1)] to-[rgba(253,198,44,0.4)]">
+                    <h1 class="feature_text_h1">Expense tracker</h1>
+                    <p class="feature_text_p">Easily log your daily expenses and categorize your spending for better
+                        tracking and control.</p>
+                </div>
+            </div>
+            <div class="features_box flex">
+                <div class="feature_img ">
+                    <img src="/images/calender.jpeg" alt="" class="rounded-l-2xl h-full w-full">
+                </div>
+
+                <div class="feature_text bg-gradient-to-r from-[rgba(251,247,246,1)] to-[rgba(102,164,239,0.4)]">
+                    <h1 class="feature_text_h1">Monthly Budgeting</h1>
+                    <p class="feature_text_p">Plan your monthly budgets and keep your finances in check with simple,
+                        organized tracking.</p>
+                </div>
+            </div>
+            <div class="features_box flex">
+                <div class="feature_img ">
+                    <img src="/images/target.jpeg" alt="" class="rounded-l-2xl h-full w-full">
+                </div>
+
+                <div class="feature_text bg-gradient-to-r from-[rgba(251,247,246,1)] to-[rgba(144,122,198,0.4)]">
+                    <h1 class="feature_text_h1">Savings Goals</h1>
+                    <p class="feature_text_p">Set and track your personal or group savings goals with ease. Stay focused
+                        and reach your targets faster.</p>
+                </div>
+            </div>
+            <div class="features_box flex">
+                <div class="feature_img ">
+                    <img src="/images/chart.jpeg" alt="" class="rounded-l-2xl h-full w-full">
+                </div>
+
+                <div class="feature_text bg-gradient-to-r from-[rgba(251,247,246,1)] to-[rgba(239,99,43,0.4)] ">
+                    <h1 class="feature_text_h1">Insights & Charts</h1>
+                    <p class="feature_text_p">Understand your spending behavior through clean, insightful charts and
+                        graphs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutus"
+        class="scroll-mt-[120px] std_box md:h-auto md:min-h-[500px] md:pb-14 std_width sm:min-h-[720px] bg-[rgba(255,255,255,0.5)] z-10 p-7">
+        <div class="flex flex-col items-center gap-7 sm:gap-8 ">
+            <h1 class="font-semibold text-4xl text-center xl:text-5xl">About us</h1>
+            <p class="text-lg sm:text-2xl text-center p-3 sm:pb-2 lg:p-3 xl:text-3xl max-h-[500px] overflow-auto">Finary
+                is a modern financial management tool designed to simplify money management, making it accessible and
+                stress-free for everyone. Whether you're a student, a professional, or anyone in between, Finary
+                empowers you to take control of your finances — no expertise required.
+                Our mission is simple: to help you gain control over your money and make smarter financial decisions
+                with ease.
+                We prioritize creating a clean, intuitive experience that seamlessly integrates into your daily life.
+                Whether you're budgeting, saving, or just starting your financial journey, Finary is here to support you
+                every step of the way.
+                At Finary, we believe that cultivating good financial habits today leads to a brighter future tomorrow.
+                We're here to make that journey as simple and rewarding as possible.</p>
+        </div>
+    </section>
+
+    <section id="animation" class="fixed h-[45vh] w-[26.04vw] top-[10.42vw] left-[-6.25vw]  ">
+        <div
+            class="m-60 h-[14.58vw] w-[14.58] animate-move_tl rounded-full bg-amber-600 blur-lg absolute top-0 left-0">
+        </div>
+
+        <div
+            class="m-60 h-[15.63vw] w-[15.63vw] animate-move_tr rounded-full bg-amber-600 blur-lg absolute top-0 left-0 ">
+        </div>
+        <div
+            class="m-60 h-[22vw] w-[22vw] animate-move_t rounded-full bg-amber-600 blur-lg absolute top-0 left-0 ">
+        </div>
+    </section>
+
+    
+
+    <footer class="h-80 z-10 bg-[rgba(148,163,184,0.95)] w-full mt-9 rounded-t-2xl"></footer>
+    
+    <script src="/landing.js"></script>
+</body>
+    
+</html>
