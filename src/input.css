@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.allcenter{
+    @apply flex items-center justify-center;
+}
+
+.custom_shadow{
+    @apply shadow-[4px_4px_12px_rgba(0,0,0,0.25)];
+}
+.link{
+    @apply text-xl no-underline hover:bg-slate-300 rounded-3xl p-2 transition-all ease-linear duration-100;
+}
+.mlink{
+    @apply text-4xl no-underline hover:bg-slate-300 rounded-3xl p-2 transition-all ease-linear duration-100
+}
+.std_width{
+   @apply w-11/12 max-w-[2000px];
+}
+.std_box{
+    @apply  min-h-[60vh] mt-8 border border-[rgba(158,158,158,0.25)]  rounded-2xl;
+}
+.button_shadow{
+    @apply transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:shadow-[6px_6px_28px_rgba(0,0,0,0.3)]
+}
+.features_box{
+    @apply hover:scale-105 duration-200 ease-linear 2xl:ml-[76px] 2xl:mb-6 w-[88%] h-[110px] sm:h-[144px] m-2 mt-7 rounded-2xl md:w-[580px] md:h-[180px] custom_shadow  ;
+}
+.feature_img{
+    @apply w-[35%] h-full bg-cover bg-center rounded-l-2xl ;
+}
+.feature_text{
+    @apply overflow-auto w-[65%] h-full rounded-r-2xl p-2 flex flex-col justify-center gap-2 sm:gap-2;
+}
+.feature_text_h1{
+    @apply text-[clamp(20px,4.2vw,37px)] font-semibold md:text-4xl leading-tight ;
+}
+.feature_text_p{
+    @apply text-[clamp(10px,2.4vw,22px)] text-[rgba(0,0,0,0.56)] md:text-xl leading-snug;
+}
